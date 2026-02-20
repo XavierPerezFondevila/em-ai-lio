@@ -1,11 +1,14 @@
 'use client';
 
 import { EmailsProvider } from '@/context/EmailsContext';
+import { SessionProvider } from 'next-auth/react';
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <EmailsProvider>
-      {children}
-    </EmailsProvider>
+    <SessionProvider>
+      <EmailsProvider>
+        {children}
+      </EmailsProvider>
+    </SessionProvider>
   );
 }
