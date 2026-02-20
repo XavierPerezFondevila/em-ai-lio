@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: #faf5f7;
+  --color-primary: #0f0a07;
+  --color-secondary: #ffffff;
+  --color-lower-text: #5a5450;
+  --color-light: #e1ddd7;
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
