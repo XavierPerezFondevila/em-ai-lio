@@ -10,6 +10,25 @@
   --color-lower-text: #5a5450;
   --color-light: #e1ddd7;
 
+  /* Button */
+  --color-btn-primary-bg: var(--color-primary);
+  --color-btn-primary-text: #ffffff;
+  --color-btn-primary-border: var(--color-primary);
+  --color-btn-primary-hover: #2a2320;
+
+  --color-btn-secondary-bg: #ffffff;
+  --color-btn-secondary-text: var(--color-primary);
+  --color-btn-secondary-border: #e1ddd7;
+  --color-btn-secondary-hover: #faf5f7;
+
+  --color-btn-ghost-text: var(--color-primary);
+  --color-btn-ghost-hover: #faf5f7;
+
+  --color-btn-danger-bg: #cf222e;
+  --color-btn-danger-border: #cf222e;
+  --color-btn-danger-hover: #a40e26;
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-montserrat: var(--font-montserrat);
 }

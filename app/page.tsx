@@ -1,8 +1,10 @@
 import TemplatePreviewer from "@/components/preview/TemplatePreviewerSection";
 import TemplatesList from "@/components/lists/TemplatesList";
+import Header from "@/components/Header";
 
 export default function Home() {
-  return (
+  return (<>
+    <Header/>
     <main className="flex w-full p-6 gap-6 bg-background h-[calc(100vh-69px)]">
       <div className="flex flex-col w-[60%] h-full overflow-hidden">
         <TemplatesList/>
@@ -11,5 +13,6 @@ export default function Home() {
         <TemplatePreviewer/>
       </div>
     </main>
+  </>
   );
 }
