@@ -1,14 +1,14 @@
 import { Brain } from "lucide-react"
 import Link from "next/link";
 import Logo from "./Logo";
-import AccountDropdown from "./AccountDropdown";
+import UserMenu from "./UserMenu";
 
 export default function Header(){
 
   
   return (
   <header className="py-4 px-6 border-light border-b bg-secondary">
-    <div className="flex justify-between">
+    <div className="flex justify-between items-center">
       <div className="flex gap-3 items-center">
         <Link href={'/'}>
           <Logo size={28}/>
@@ -18,7 +18,7 @@ export default function Header(){
           <p className="text-xs text-zinc-600">Think big, do nothing</p>
         </div>
       </div>
-      <AccountDropdown />
+      <UserMenu />
     </div>
   </header>);
 }
